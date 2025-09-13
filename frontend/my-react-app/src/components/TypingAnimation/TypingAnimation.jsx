@@ -48,7 +48,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { highlightKeywords } from '../../utils/textUtils';
 
-const TypingAnimation = ({ text, speed = 50, className = '', onComplete }) => {
+const TypingAnimation = ({ text, speed = 15, className = '', onComplete }) => {
   const [displayedText, setDisplayedText] = useState('');
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isComplete, setIsComplete] = useState(false);
